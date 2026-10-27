@@ -18,10 +18,11 @@ https://github.com/howardroatti/example_crud_oracle
 
 ---
 
+
 ## Integrante 2
 
-## Integrante 3
-Samuel Floriano Oliveira de Siqueira
+## Samuel Floriano Oliveira de Siqueira
+
 ## Integrante 4
 
 ## Integrante 5
