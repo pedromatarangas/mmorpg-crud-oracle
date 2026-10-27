@@ -18,7 +18,7 @@ https://github.com/howardroatti/example_crud_oracle
 
 ---
 
-## Integrante 2
+## Davi de Brito Teixeira 
 
 ## Integrante 3
 
