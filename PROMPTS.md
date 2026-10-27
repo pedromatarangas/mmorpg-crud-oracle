@@ -18,9 +18,14 @@ https://github.com/howardroatti/example_crud_oracle
 
 ---
 
+<<<<<<< HEAD
 ## Davi de Brito Teixeira 
+=======
 
-## Integrante 3
+## Integrante 2
+>>>>>>> e47250d0b7de39aa068d948cb2f31da03ca61509
+
+## Samuel Floriano Oliveira de Siqueira
 
 ## Integrante 4
 
