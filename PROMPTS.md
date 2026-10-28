@@ -54,6 +54,16 @@ Gemini, estou fazendo um trabalho de banco de dados na VM oracle e estou na part
 
 **O que foi feito com a resposta:** Testes no DBeaver sobre o SQL de GUILDAS.
 
+### Prompt 2 - 28/10/2026
+**Fonte:** Gemini
+
+**Prompt:**
+```text
+Gemini, gostaria de saber se tem alguma forma de fazer a identação do código dentro do VS Code na VM ou teria que fazer tudo manualmente.
+```
+
+**O que foi feito com a resposta:** Foi feito a identação do código na parte de model Guildas.
+
 
 ## Samuel Floriano Oliveira de Siqueira
 
