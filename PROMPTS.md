@@ -64,6 +64,15 @@ Gemini, gostaria de saber se tem alguma forma de fazer a identação do código 
 
 **O que foi feito com a resposta:** Foi feito a identação do código na parte de model Guildas.
 
+### Prompt 3 - 28/10/2026
+**Fonte:** Gemini
+
+**Prompt:**
+```text
+Gemini, estou na parte da criação de Controller da Guilda. Vou mandar o codigo para que possa me ajudar caso encontre algum erro e tambem vou precisar de ajuda na parte da identação do codigo para usar no VS Code da VM.
+```
+
+**O que foi feito com a resposta:** Foi feita uma verificação do codigo na parte de Controller Guilda e feita a identação correta para usar no VS Code da VM.
 
 ## Samuel Floriano Oliveira de Siqueira
 
