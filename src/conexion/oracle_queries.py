@@ -7,7 +7,7 @@
 import oracledb as driver
 
 USUARIO = "labdatabase"
-SENHA = "lab@Database2025" # senha usada no exemplo do professor; confira
+SENHA = "lab@Database2025"
 HOST = "localhost"
 PORTA = 1521
 SID = ""
