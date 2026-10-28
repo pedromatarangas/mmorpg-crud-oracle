@@ -20,6 +20,17 @@ https://github.com/howardroatti/example_crud_oracle
 
 ## Davi de Brito Teixeira 
 
+### Prompt 1 - 28/10/2026
+**Fonte:** Gemini
+
+**Prompt:**
+```text
+Gemini, estou fazendo um trabalho de banco de dados na VM oracle e estou na parte de fazer o teste SQL pra ver se ta rodando essa parte. Fiz o passo a passo aqui para conseguir abrir o arquivo no DBeaver e apertei o Alt+X pra ver a conexao, porem deu "No active connection". Depois disso consegui conectar e fazer os testes.
+```
+
+**O que foi feito com a resposta:** Testes no DBeaver sobre o SQL de GUILDAS.
+
+
 ## Samuel Floriano Oliveira de Siqueira
 
 ## Integrante 4
