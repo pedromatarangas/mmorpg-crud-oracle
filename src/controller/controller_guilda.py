@@ -127,36 +127,23 @@ class Controller_Guilda:
                 if not perguntar_sim_nao("Confirma a remoção desta guilda?"):
                     print("\nRemoção cancelada.")
                     break  # o edital pede: se "Não", volta ao menu principal
+              
                 # A guilda é chave estrangeira em PERSONAGENS?
-                qtd = oracle.consultar(
-                    f"select count(1) from personagens where id_guilda = {id_guilda}"
-                )[0][0]
+                qtd = oracle.consultar(f"select count(1) from personagens where id_guilda = {id_guilda}")[0][0]
+                
                 if qtd > 0:
-                    print(
-                        f"\nAtenção: a guilda '{guilda.get_nome()}' tem {qtd} personagem(ns)."
-                    )
-                    if perguntar_sim_nao(
-                        "Deseja remover esses personagens junto com a guilda?"
-                    ):
-                        oracle.executar(
-                            f"delete from personagens where id_guilda = {id_guilda}"
-                        )
-                        if oracle.executar(
-                            f"delete from guildas where id_guilda = {id_guilda}"
-                        ):
-                            print(
-                                f"\nGuilda e {qtd} personagem(ns) removidos com sucesso!"
-                            )
-                    else:
-                        print(
-                            "\nA guilda não foi removida, porque ainda tem"
-                            " personagens."
-                        )
+                    # Tem personagens: a guilda NÃO pode ser excluída
+                    print(f"\nA guilda '{guilda.get_nome()}' não pode ser excluída, "
+                          f"porque ainda tem {qtd} personagem(ns):\n")
+                    oracle.imprimir(
+                        f"select id_personagem as id, nome from personagens "
+                        f"where id_guilda = {id_guilda} order by id_personagem")
+                    print("\nTransfira esses personagens para outra guilda "
+                          "(menu Atualizar > Personagens) e tente novamente.")
                 else:
-                    if oracle.executar(
-                        f"delete from guildas where id_guilda = {id_guilda}"
-                    ):
+                    if oracle.executar(f"delete from guildas where id_guilda = {id_guilda}"):
                         print("\nGuilda removida com sucesso!")
             if not perguntar_sim_nao("\nDeseja remover mais alguma guilda?"):
                 break
         oracle.fechar()
+                        
