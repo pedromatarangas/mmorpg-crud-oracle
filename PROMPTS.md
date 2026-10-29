@@ -86,7 +86,7 @@ Estou fazendo um trabalho em grupo de Banco de Dados (projeto mmorpg-crud-oracle
 
 **O que foi feito com a resposta:** Segui as orientações da IA no terminal. Primeiro rodei git fsck, que confirmou o missing blob. Depois executei git reset --soft HEAD~1, git reset e git add src/model/jogadores.py, o que regravou o objeto que faltava. Rodei o git fsck de novo e ele não apontou mais erros. Por fim, fiz o git commit e o git push, e o código foi enviado ao repositório com sucesso.
 
-## Integrante 4
+## Artur Carmo dos Santos
 
 ## Gabriel Leal Hoffoman
 
