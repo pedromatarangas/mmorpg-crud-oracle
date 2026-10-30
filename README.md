@@ -12,7 +12,7 @@ MMORPG no banco **Oracle**: jogadores, guildas e personagens.
 - Gabriel Leal Hoffoman
 
 ## Vídeo de demonstração
-[Assista no YouTube](COLE_O_LINK_DO_VIDEO_AQUI)
+[Assista no YouTube](https://www.youtube.com/watch?v=JcYIYt4SRMM)
 
 ## Modelo de dados
 O sistema tem três tabelas. Um jogador possui vários personagens e uma guilda agrupa vários personagens;
