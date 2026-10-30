@@ -128,6 +128,8 @@ Gemini, poderia corrigir todo o projeto que irei lhe enviar a seguir, sendo tema
 
 **O que foi feito com a resposta:** As informações fornecidas pela IA foi utilizada por várias consultas que não tinham ";" no final, que ocorre erro de sintexe, me compilou os arquivos necessários já que não estava conseguindo e também corrigiu o código do diagrama mermaid.
 
+---
+
 ## Prompt 2 - 28/10/2026
 **Fonte:** Gemini
 
