@@ -52,7 +52,7 @@ class Controller_Jogador:
                                 print(f"\nO nickname '{nickname}' já está em uso. ")
                         else:
                                 email = self.ler_email()
-                                data_cadastro = self.ler_email()
+                                data_cadastro = ler_data("Data de cadastro")
                                 novo_id = oracle.proximo_id("JOGADORES_ID_SEQ")
                                 sql = (f"insert into jogadores (id_jogador, nickname, email, data_cadastro) "
                                        f"values ({novo_id}, '{nickname}', '{email}', "
@@ -90,7 +90,7 @@ class Controller_Jogador:
                                         print(f"\nO nickname '{novo_nickname}' já está em uso por outro jogador. ")
                                 else:
                                         novo_email = self.ler_email()
-                                        nova_data = ler_data()
+                                        nova_data = ler_data("Data de cadastro")
                                         sql = (f"update jogadores set nickname = '{novo_nickname}', "
                                                f"email = '{novo_email}', "
                                                f"data_cadastro = to_date('{nova_data}', 'DD/MM/YYYY') "
@@ -128,7 +128,7 @@ class Controller_Jogador:
                                         f"select count(1) from personagens where id_jogador = {id_jogador}")[0][0]
 
                                 if qtd > 0:
-                                        print("\nO jogador não foi removido, porque ainda tem personagens. ")
+                                        print("\nATENÇÃO! Esse jogador possui personagens vinculados. ")
                                         if perguntar_sim_nao("Deseja remover esses personagens junto com o jogador?"):
                                                 oracle.executar(f"delete from personagens where id_jogador = {id_jogador}")
                                                 if oracle.executar(f"delete from jogadores where id_jogador = {id_jogador}"):

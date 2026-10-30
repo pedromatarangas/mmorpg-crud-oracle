@@ -42,6 +42,18 @@ Beleza claude, eu entendi mais ou menos 15% de tudo que você falou. Vamos por p
 
 ---
 
+### Prompt 4 - 30/10/2026
+**Fonte:** Claude Opus 5.5 (Anthropic)
+
+**Prompt:**
+```text
+Bom dia Claudinho, preciso fazer a Splash Screen do trabalho, mas queria deixar ela mais enfeitada pro tema em questão. Em se tratando de MMORPG, pensei naquelas Splash Screens antigas estilo fliperama, acho que cairia bem legal no projeto. Eu literalmente não sei como faz uma, então se pudesse fazer pra mim, aproveito e dou uma estudada em cima.
+```
+
+**O que foi feito com a resposta:** Código da Splash Screen.
+
+---
+
 ## Davi de Brito Teixeira 
 
 ### Prompt 1 - 28/10/2026
@@ -54,6 +66,8 @@ Gemini, estou fazendo um trabalho de banco de dados na VM oracle e estou na part
 
 **O que foi feito com a resposta:** Testes no DBeaver sobre o SQL de GUILDAS.
 
+---
+
 ### Prompt 2 - 28/10/2026
 **Fonte:** Gemini
 
@@ -63,6 +77,8 @@ Gemini, gostaria de saber se tem alguma forma de fazer a identação do código 
 ```
 
 **O que foi feito com a resposta:** Foi feito a identação do código na parte de model Guildas.
+
+---
 
 ### Prompt 3 - 28/10/2026
 **Fonte:** Gemini
@@ -74,17 +90,21 @@ Gemini, estou na parte da criação de Controller da Guilda. Vou mandar o codigo
 
 **O que foi feito com a resposta:** Foi feita uma verificação do codigo na parte de Controller Guilda e feita a identação correta para usar no VS Code da VM.
 
+---
+
 ## Samuel Floriano Oliveira de Siqueira
 
 ### Prompt 1 - 28/10/2026
 **Fonte:** Claude Sonnet 5.5 Medium
 
-**Prompt**
+**Prompt:**
 ```text
 Estou fazendo um trabalho em grupo de Banco de Dados (projeto mmorpg-crud-oracle, em Python) e criei a classe Jogador em src/model/jogadores.py, com getters, setters e to_string. Rodei git pull, git add src/model/jogadores.py e git commit, mas a máquina virtual travou no meio do git add. Agora, ao rodar git push, aparece: fatal: unable to read 49cc4ca..., the remote end hung up unexpectedly e failed to push some refs. Já tentei git reset --soft HEAD~1 e git pull, e nada mudou. Como resolvo esse erro e consigo enviar meu código para o repositório?
 ```
 
 **O que foi feito com a resposta:** Segui as orientações da IA no terminal. Primeiro rodei git fsck, que confirmou o missing blob. Depois executei git reset --soft HEAD~1, git reset e git add src/model/jogadores.py, o que regravou o objeto que faltava. Rodei o git fsck de novo e ele não apontou mais erros. Por fim, fiz o git commit e o git push, e o código foi enviado ao repositório com sucesso.
+
+---
 
 ## Artur Carmo dos Santos
 
@@ -111,29 +131,28 @@ como faz para teste o controller?
 
 **O que foi feito com a resposta:** Segui o roteiro de testes do Controller_Personagem. Os erros que apareceram foram de ambiente, não do código: faltava a biblioteca oracledb (instalei com pip3), o Oracle estava desligado no Docker (subi com docker compose up -d) e as tabelas não existiam no meu banco (ORA-00942), porque o Git compartilha os arquivos .sql, mas cada VM tem o próprio banco e precisa executar os scripts.
 
----
-
 ### Observação
 Minha parte (Integrante C: script SQL da tabela PERSONAGENS, classe Personagem e Controller_Personagem) foi feita seguindo o guia em PDF gerado pelo Claude a partir do Prompt 3 do Pedro.
 
+---
+
 ## Gabriel Leal Hoffoman
 
-## Prompt 1 - 28/10/2026
+### Prompt 1 - 28/10/2026
 **Fonte:** Gemini
 
-**Prompt**
+**Prompt:**
 ```text
-
 Gemini, poderia corrigir todo o projeto que irei lhe enviar a seguir, sendo tema MMORPG, veja se tem algo incorreto e me explique o que deveria ter sido feito para executar com excelência. Incluindo os códigos.
 ```
 **O que foi feito com a resposta:** As informações fornecidas pela IA foi utilizada por várias consultas que não tinham ";" no final, que ocorre erro de sintexe, me compilou os arquivos necessários já que não estava conseguindo e também corrigiu o código do diagrama mermaid.
 
 ---
 
-## Prompt 2 - 28/10/2026
+### Prompt 2 - 28/10/2026
 **Fonte:** Gemini
 
-**Prompt**
+**Prompt:**
 ```text
 Gemini, surgiu uma certa dúvida de como eu poderia fazer um bom roteiro de vídeo que envolva testar o sistema produzido pelo grupo, incluindo menus de inserção, atualização, remoção, relatórios e tela inicial, como dito anteriormente por você. Seria agradável também sugerir um exemplo de roteiro para compreensão melhor desta etapa do trabalho.
 ```

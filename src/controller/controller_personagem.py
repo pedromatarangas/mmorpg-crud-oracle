@@ -12,7 +12,8 @@ class Controller_Personagem:
         pass
 
     def buscar_personagem(self, oracle, id_personagem):
-
+        """Busca o personagem pelo ID, já trazendo os dados do jogador e da guilda
+        (JOIN). Devolve um objeto Personagem, ou None se não existir."""
         linhas = oracle.consultar(
             f"select p.id_personagem, p.nome, p.classe, p.nivel, "
             f" j.id_jogador, j.nickname, j.email, to_char(j.data_cadastro, 'DD/MM/YYYY'), "
@@ -29,13 +30,17 @@ class Controller_Personagem:
         return Personagem(linha[0], linha[1], linha[2], linha[3], jogador, guilda)
     
     def verifica_existencia_personagem(self, oracle, id_personagem):
+        """Devolve True se existe personagem com esse ID."""
         return self.buscar_personagem(oracle, id_personagem) is not None
     
     def listar_personagens(self, oracle):
+        """Mostra os personagens na tela e devolve quantos existem."""
         return oracle.imprimir(
             "select id_personagem as id, nome, classe, nivel "
             "from personagens order by id_personagem")
+    
     def escolher_classe(self):
+        """Mostra as classes numeradas e devolve a escolhida."""
         print("Classes disponíveis:")
         for i in range(len(CLASSES)):
             print(f" {i + 1} - {CLASSES[i]}")
@@ -43,6 +48,7 @@ class Controller_Personagem:
         return CLASSES[opcao - 1]
     
     def escolher_jogador(self, oracle):
+        """Mostra os jogadores e devolve o ID de um que exista."""
         print("\nJogadores cadastrados:")
         oracle.imprimir("select id_jogador as id, nickname from jogadores order by id_jogador")
         while True:
@@ -54,6 +60,7 @@ class Controller_Personagem:
             print(f" Não existe jogador com o ID {id_jogador}.")
 
     def escolher_guilda(self, oracle):
+        """Mostra as guildas e devolve o ID de uma que exista."""
         print("\nGuildas cadastradas:")
         oracle.imprimir("select id_guilda as id, nome from guildas order by id_guilda")
         while True:
@@ -65,6 +72,7 @@ class Controller_Personagem:
             print(f" Não existe guilda com o ID {id_guilda}.")
 
     def existem_jogadores_e_guildas(self, oracle):
+        """Personagem precisa de jogador e guilda: confere se existem os dois."""
         qtd_jogadores = oracle.consultar("select count(1) from jogadores")[0][0]
         qtd_guildas = oracle.consultar("select count(1) from guildas")[0][0]
         if qtd_jogadores == 0 or qtd_guildas == 0:
