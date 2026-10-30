@@ -125,7 +125,7 @@ Minha parte (Integrante C: script SQL da tabela PERSONAGENS, classe Personagem e
 ```text
 
 Gemini, poderia corrigir todo o projeto que irei lhe enviar a seguir, sendo tema MMORPG, veja se tem algo incorreto e me explique o que deveria ter sido feito para executar com excelência. Incluindo os códigos.
-
+```
 **O que foi feito com a resposta:** As informações fornecidas pela IA foi utilizada por várias consultas que não tinham ";" no final, que ocorre erro de sintexe, me compilou os arquivos necessários já que não estava conseguindo e também corrigiu o código do diagrama mermaid.
 
 ---
