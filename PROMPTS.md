@@ -88,6 +88,34 @@ Estou fazendo um trabalho em grupo de Banco de Dados (projeto mmorpg-crud-oracle
 
 ## Artur Carmo dos Santos
 
+### Prompt 1 - 29/10/2026
+**Fonte:** Claude Opus 5.5 (Anthropic)
+
+**Prompt:**
+```text
+oq tem de errado no meu código? o id_personagem no começo ta com uma linha ondulada embaixo
+[código da classe Personagem colado junto]
+```
+
+**O que foi feito com a resposta:** Entendi e corrigi três erros na classe Personagem. (1) O parâmetro do construtor foi digitado como "id_personagempo", então a variável id_personagem usada na linha de baixo não existia (era a linha ondulada). (2) No construtor eu chamava self.get_guilda(guilda), mas o construtor precisa guardar o valor, então o certo é o setter, self.set_guilda(guilda). (3) O get_id_personagem recebia um parâmetro a mais; getters só recebem o self, e o to_string() chamava ele sem argumento, o que daria erro. Depois de corrigir, testei o import da classe e fiz o commit do model.
+
+---
+
+### Prompt 2 - 29/10/2026
+**Fonte:** Claude Opus 5.5 (Anthropic)
+
+**Prompt:**
+```text
+como faz para teste o controller?
+```
+
+**O que foi feito com a resposta:** Segui o roteiro de testes do Controller_Personagem. Os erros que apareceram foram de ambiente, não do código: faltava a biblioteca oracledb (instalei com pip3), o Oracle estava desligado no Docker (subi com docker compose up -d) e as tabelas não existiam no meu banco (ORA-00942), porque o Git compartilha os arquivos .sql, mas cada VM tem o próprio banco e precisa executar os scripts.
+
+---
+
+### Observação
+Minha parte (Integrante C: script SQL da tabela PERSONAGENS, classe Personagem e Controller_Personagem) foi feita seguindo o guia em PDF gerado pelo Claude a partir do Prompt 3 do Pedro.
+
 ## Gabriel Leal Hoffoman
 
 ## Prompt 1 - 28/10/2026
