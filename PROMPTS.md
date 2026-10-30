@@ -123,17 +123,17 @@ Minha parte (Integrante C: script SQL da tabela PERSONAGENS, classe Personagem e
 
 **Prompt**
 ```text
-Gemini, me ajude com um trabalho de banco de dados, sendo o tema MMORPG...irei manda-ló um arquivo em pdf da minha parte. Sendo assim, faça um resumo desse arquivo e coloque em tópicos todas as etapas necessárias para otimizar o projeto.
-```
 
-**O que foi feito com a resposta:** A resposta dada pela IA foi utilizada para mapear e alinhar o escopo das entregas da parte D, como o diagrama em Mermaid, consultas SQL de relatórios com `GROUP BY`/`JOIN`, classe `Relatorio` em Python e roteiro do vídeo. Sendo assim, ajudou também para organizar o checklist de otimização no fluxo do Git e testes no DBeaver.
+Gemini, poderia corrigir todo o projeto que irei lhe enviar a seguir, sendo tema MMORPG, veja se tem algo incorreto e me explique o que deveria ter sido feito para executar com excelência. Incluindo os códigos.
+
+**O que foi feito com a resposta:** As informações fornecidas pela IA foi utilizada por várias consultas que não tinham ";" no final, que ocorre erro de sintexe, me compilou os arquivos necessários já que não estava conseguindo e também corrigiu o código do diagrama mermaid.
 
 ## Prompt 2 - 28/10/2026
 **Fonte:** Gemini
 
 **Prompt**
 ```text
-Gemini, após o resumo, surgiu uma certa dúvida de como eu poderia fazer um bom roteiro de vídeo que envolva testar o sistema produzido pelo grupo, incluindo menus de inserção, atualização, remoção, relatórios e tela inicial, como dito anteriormente por você. Seria agradável também sugerir um exemplo de roteiro para compreensão melhor desta etapa do trabalho.
+Gemini, surgiu uma certa dúvida de como eu poderia fazer um bom roteiro de vídeo que envolva testar o sistema produzido pelo grupo, incluindo menus de inserção, atualização, remoção, relatórios e tela inicial, como dito anteriormente por você. Seria agradável também sugerir um exemplo de roteiro para compreensão melhor desta etapa do trabalho.
 ```
 
 **O que foi feito com a resposta:** O modelo de roteiro fornecido pela IA foi utilizado como base para criar e estruturar o arquivo `ROTEIRO_VIDEO.md` na raiz do projeto, dividindo os tempos e falas da apresentação entre os integrantes do grupo para a gravação da demonstração do sistema.
